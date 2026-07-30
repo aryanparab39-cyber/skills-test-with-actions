@@ -1,4 +1,4 @@
-mv .github/workflows/python-publish.yml .github/workflows/python-package.ymlname: Python Coverage
+name: Python Coverage
 
 on:
   pull_request:
@@ -39,4 +39,4 @@ jobs:
           MINIMUM_ORANGE: 70
 
       - name: Fail if below threshold
-        run: coverage report --fail-under=90
+      run: coverage report --fail-under=90
